@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An unparalleled experience of sound magic, Audiospark">
+        <meta name="keywords" content="Audiospark">
+        <meta name="theme-color" content="#0000FF">
+
+        <!-- IMPORT CSS MAIN -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- IMPORT FONT AWESOME -->
+        <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome.min.css">
+        <link rel="stylesheet" type="text/css" href="fonts/css/all.min.css">
+        <!-- IMPORT FAVICON -->
+        <link rel="shortcut icon" href="images/logo/SVG/Audiospark_Logo_Icon.svg" type="image/x-icon">
+        
+        <!-- TITLE -->
+        <title>USER: Hans Zimmer — Audiospark</title>
+    </head>
+    <body id="Top" class="page-01 page-02">
+
+        <!-- LOADER -->
+        <div class="loader-warpper" id="loader">
+            <div class="loader"></div>
+        </div>
+
+
+        <!-- NAVBAR -->
+        <nav id="navbarFixed">
+            <ul>
+                <a href="javascript:void(0)" onclick="navbarMobileToggle()" title="Menu" aria-label="Menu" class="fa-bars-mobile"><span class="far fa-bars"></span></a>
+                <a href="index.html"><img src="images/logo/SVG/Audiospark_Logo_Icon.svg" alt="" title="Audiospark"></a>
+                <ul id="navbarMobileToggle">
+                    <a href="javascript:void(0)" onclick="navbarMobileToggle()" title="Close Menu" aria-label="Close Menu" class="fa-close-mobile"><span class="far fa-close"></span></a>
+                    
+                    <a href="index.html#explore"><li>Explore</li></a>
+                    <a href="index.html#featured_creators"><li>Featured Creators</li></a>
+                    <a href="index.html#trending"><li>Trending</li></a>
+                    <a href="index.html#category"><li>Category</li></a>
+                    <a href="index.html#popular_artists"><li>Popular Artists</li></a>
+                </ul>
+            </ul>
+            <ul>
+                <a href="javascript:void(0)" onclick="switchMode()" id="switchModeBtnDark" title="Switch Dark Mode" aria-label="Switch Dark Mode"><span class="far fa-moon"></span></a>
+                <a href="javascript:void(0)" onclick="switchMode()" id="switchModeBtnLight" title="Switch Light Mode" aria-label="Switch Light Mode"><span class="far fa-sun"></span></a>
+                <a href="javascript:void(0)" onclick="searchMode()" title="Search" aria-label="Search"><span class="far fa-search"></span></a>
+                <a href="javascript:void(0)" onclick="avatarDropdown()"><img src="images/avatar/avatar-1.png" alt=""></a>
+
+                <!-- AVATAR DORPDOWN -->
+                <div class="avatar-dropdown" id="avatarDropdown">
+                    <a href=""><li><span class="far fa-user"></span> Profile</li></a>
+                    <a href=""><li><span class="far fa-cog"></span> Settings</li></a>
+                    <a href="javascript:void(0)" onclick="supportChatMode()"><li><span class="far fa-comment"></span> Support</li></a>
+                    <a href=""><li><span class="far fa-star"></span> Upgrade Plan</li></a>
+
+                    <hr>
+
+                    <a href=""><li><span class="far fa-history"></span> Recent</li></a>
+                    <a href=""><li><span class="far fa-play-circle"></span> Playlist</li></a>
+                    <a href=""><li><span class="far fa-heart"></span> likes</li></a>
+                    <a href=""><li><span class="far fa-download"></span> Downloads</li></a>
+                </div>
+            </ul>
+        </nav>
+
+        <!-- SEARCH MODE -->
+        <div class="overlay-search-mode" id="overlaySearchMode">
+            <div class="search-mode" id="searchMode">
+                <a href="javascript:void(0)" onclick="searchMode()"></a>
+                <!-- FORM: SEARCH -->
+                <form action="" method="post">
+                    <span class="far fa-search"></span>
+                    <input type="search" placeholder="Search" aria-placeholder="Search">
+                </form>
+            </div>
+        </div>
+
+        <!-- SUPPORT & CHAT MODE -->
+        <div class="overlay-support-chat-mode" id="supportChatMode">
+            <div class="support-chat-mode">
+                <!-- CHAT HEADER -->
+                <div class="support-chat-mode-header">
+                    <h4>Support <img src="images/logo/PNG/Audiospark_Logo_Icon/Audiospark_Logo_Icon@2400.png" alt="" title="Audiospark Bot"></h4>
+                    <a href="javascript:void(0)" onclick="supportChatMode()"><span class="far fa-close"></span></a>
+                </div>
+                <!-- CHAT BODY -->
+                <div class="support-chat-mode-body">
+                    <div class="chat-date">Today, September 26, 2023</div>
+                    <div class="section-message-bot">
+                        <img src="images/logo/PNG/Audiospark_Logo_Icon/Audiospark_Logo_Icon@2400.png" alt="">
+                        <p>Hello! How can I assist you today?</p>
+                    </div>
+                    <div class="section-message-user">
+                        <img src="images/avatar/avatar-1.png" alt="">
+                        <p>Hi</p>
+                        <p>How to download as musics ZIP ???</p>
+                    </div>
+                    <div class="section-message-bot">
+                        <img src="images/logo/PNG/Audiospark_Logo_Icon/Audiospark_Logo_Icon@2400.png" alt="">
+                        <p>You most first click on the 'DOWNLOAD' button to automatically download ZIP file after a few seconds.
+                        <br><br>
+                        If you have a problem, are you ready to be responsive to you.</p>
+                    </div>
+                    <div class="section-message-user">
+                        <img src="images/avatar/avatar-1.png" alt="">
+                        <p>Thank you very much for your problem.</p>
+                        <p>🙏🙏🙏</p>
+                    </div>
+                </div>
+                <!-- CHAT FOOTER -->
+                <div class="support-chat-mode-footer">
+                    <form action="" method="post">
+                        <span class="far fa-paperclip" onclick=""></span>
+                        <textarea name="" id="" cols="30" rows="1" placeholder="Write a msssage..." aria-placeholder="Write a msssage..."></textarea>
+                        <span class="far fa-smile" onclick=""></span>
+                        <button type="submit" class="far fa-chevron-right" aria-placeholder="Send"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- HEADER/HERO -->
+        <header class="hero hero-page">
+            <div>
+                <figure>
+                    <a href="images/avatar-artists/Hans-Zimmer-400x400.jpg"><img src="images/avatar-artists/Hans-Zimmer-400x400.jpg" alt=""></a>
+                </figure>
+                <div>
+                    <h1>Hans Zimmer</h1>
+
+                    <div>
+                        <a href="javascript:download()" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" title="Follwing" aria-label="Follwing"><button type="button" class="btn-post-default">Follwing</button></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- MAIN -->
+        <main class="user-page">
+            <!-- #SECTION: ALBUMS -->
+            <section class="section-playlist-post">
+                <div class="section-playlist-post-header">
+                    <h2>Albums</h2>
+                    <p>Hans Zimmer • 2008-2023 • <span id="numAlbums"></span> Songs</p>
+                </div>
+                <div class="section-playlist-post-body">
+                    <div class="card-grid" id="cardGridLen">
+                        <div class="card-simple">
+                            <a href="post.html">
+                                <figure>
+                                    <img src="images/covers/Acceleration-Amadea-Music-Productions-400x400.jpeg" alt="">
+                                </figure>
+                                <h3>Acceleration</h3>
+                            </a>
+                            <p><a href="user.html">Amadea Music Productions</a></p>
+                        </div>
+                        <div class="card-simple">
+                            <a href="post.html">
+                                <figure>
+                                    <img src="images/covers/Charged-400x400.jpg" alt="">
+                                </figure>
+                                <h3>Charged</h3>
+                            </a>
+                            <p><a href="user.html">Charged</a></p>
+                        </div>
+                        <div class="card-simple">
+                            <a href="post.html">
+                                <figure>
+                                    <img src="images/covers/Deflector-3-Complexities-of-Sound-400x400.jpeg" alt="">
+                                </figure>
+                                <h3>Deflector 3</h3>
+                            </a>
+                            <p><a href="user.html">Complexities of Sound</a></p>
+                        </div>
+                        <div class="card-simple">
+                            <a href="post.html">
+                                <figure>
+                                    <img src="images/covers/Divergent-Hybrid-Orchestra-Political-Drama-Themes-Lucas-Napoleone-Philippe-Briand-Salvador-Casais-400x400.jpeg" alt="">
+                                </figure>
+                                <h3>Divergent</h3>
+                            </a>
+                            <p><a href="user.html">Hybrid Orchestra</a></p>
+                        </div>
+                        <div class="card-simple">
+                            <a href="post.html">
+                                <figure>
+                                    <img src="images/covers/Driver-Vol.-2-Imagine-Music-400x400.jpg" alt="">
+                                </figure>
+                                <h3>Driver Vol. 2</h3>
+                            </a>
+                            <p><a href="user.html">Imagine Music</a></p>
+                        </div>
+                        <div class="card-simple">
+                            <a href="post.html">
+                                <figure>
+                                    <img src="images/covers/Drowning-Abyss-2-Colossal-Trailer-Music-400x400.jpeg" alt="">
+                                </figure>
+                                <h3>Drowning Abyss 2</h3>
+                            </a>
+                            <p><a href="user.html">Colossal Trailer Music</a></p>
+                        </div>
+                        <div class="card-simple">
+                            <a href="post.html">
+                                <figure>
+                                    <img src="images/covers/Epic-Reimagined-Cover-Frostudio-Chambersonic-400x400.jpg" alt="">
+                                </figure>
+                                <h3>Epic Reimagined</h3>
+                            </a>
+                            <p><a href="user.html">Frostudio Chambersonic</a></p>
+                        </div>
+                        <div class="card-simple">
+                            <a href="post.html">
+                                <figure>
+                                    <img src="images/covers/Feed-The-Thrill-Songs-To-Your-Eyes-400x400.jpeg" alt="">
+                                </figure>
+                                <h3>Feed The Thrill</h3>
+                            </a>
+                            <p><a href="user.html">Songs To Your Eyes</a></p>
+                        </div>
+                        <div class="card-simple">
+                            <a href="post.html">
+                                <figure>
+                                    <img src="images/covers/Fight-Or-Flight-Tetra-400x400.jpg" alt="">
+                                </figure>
+                                <h3>Fight Or Flight</h3>
+                            </a>
+                            <p><a href="user.html">Tetra</a></p>
+                        </div>
+                        <div class="card-simple">
+                            <a href="post.html">
+                                <figure>
+                                    <img src="images/covers/Future-Technology-Background-Music-Lab-400x400.jpeg" alt="">
+                                </figure>
+                                <h3>Future Technology Background</h3>
+                            </a>
+                            <p><a href="user.html">Music Lab</a></p>
+                        </div>
+                        <div class="card-simple">
+                            <a href="post.html">
+                                <figure>
+                                    <img src="images/covers/Acceleration-Amadea-Music-Productions-400x400.jpeg" alt="">
+                                </figure>
+                                <h3>Acceleration</h3>
+                            </a>
+                            <p><a href="user.html">Amadea Music Productions</a></p>
+                        </div>
+                        <div class="card-simple">
+                            <a href="post.html">
+                                <figure>
+                                    <img src="images/covers/Charged-400x400.jpg" alt="">
+                                </figure>
+                                <h3>Charged</h3>
+                            </a>
+                            <p><a href="user.html">Charged</a></p>
+                        </div>
+                        <div class="card-simple">
+                            <a href="post.html">
+                                <figure>
+                                    <img src="images/covers/Deflector-3-Complexities-of-Sound-400x400.jpeg" alt="">
+                                </figure>
+                                <h3>Deflector 3</h3>
+                            </a>
+                            <p><a href="user.html">Complexities of Sound</a></p>
+                        </div>
+                        <div class="card-simple">
+                            <a href="post.html">
+                                <figure>
+                                    <img src="images/covers/Divergent-Hybrid-Orchestra-Political-Drama-Themes-Lucas-Napoleone-Philippe-Briand-Salvador-Casais-400x400.jpeg" alt="">
+                                </figure>
+                                <h3>Divergent</h3>
+                            </a>
+                            <p><a href="user.html">Hybrid Orchestra</a></p>
+                        </div>
+                        <div class="card-simple">
+                            <a href="post.html">
+                                <figure>
+                                    <img src="images/covers/Epic-Reimagined-Cover-Frostudio-Chambersonic-400x400.jpg" alt="">
+                                </figure>
+                                <h3>Epic Reimagined</h3>
+                            </a>
+                            <p><a href="user.html">Frostudio Chambersonic</a></p>
+                        </div>
+                        <div class="card-simple">
+                            <a href="post.html">
+                                <figure>
+                                    <img src="images/covers/Feed-The-Thrill-Songs-To-Your-Eyes-400x400.jpeg" alt="">
+                                </figure>
+                                <h3>Feed The Thrill</h3>
+                            </a>
+                            <p><a href="user.html">Songs To Your Eyes</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-grid">
+                <ul>
+                    <div>
+                        <img src="images/logo/SVG/Audiospark_Logo.svg" alt="" width="150px" id="logoFooterModeLight">
+                        <img src="images/logo/SVG/Audiospark_Logo_White.svg" alt="" width="150px" id="logoFooterModeDark">
+                        <p>An unparalleled experience of sound magic, Audiospark</p>
+
+                        <!-- SOCIAL MEDIA -->
+                        <ul class="footer-social-media">
+                            <a href="https://github.com/Mhadi-1382/" title="Github"><span class="fab fa-github"></span></a>
+                            <a href="https://dribbble.com/Mahdi_Rabiee/" title="Dribbble"><span class="fab fa-dribbble"></span></a>
+                            <a href="https://www.pinterest.com/MahdiRabiee82/" title="Pinterest"><span class="fab fa-pinterest"></span></a>
+                        </ul>
+
+                        <!-- FOOTER ICON -->
+                        <ul class="footer-icon">
+                            <a href=""><img src="images/elements/apple_download.svg" alt="" width="100"></a>
+                            <a href=""><img src="images/elements/google_download.svg" alt="" width="100"></a>
+                        </ul>
+                    </div>
+                </ul>
+                <ul>
+                    <h4>Audiospark</h4>
+                    <li><a href="index.html#explore">Explore</a></li>
+                    <li><a href="index.html#featured_creators">Featured Creators</a></li>
+                    <li><a href="index.html#trending">Trending</a></li>
+                    <li><a href="index.html#category">Category</a></li>
+                    <li><a href="index.html#popular_artists">Popular Artists</a></li>
+                </ul>
+                <ul>
+                    <h4>Company</h4>
+                    <li><a href="">About</a></li>
+                    <li><a href="javascript:supportChatMode()">Support</a></li>
+                    <li><a href="">API</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Cookie Policy</a></li>
+                </ul>
+                <ul>
+                    <h4>Community</h4>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Forum</a></li>
+                </ul>
+            </div>
+
+            <!-- FOOTER COPYRIGHT -->
+            <div class="footer-copyright">
+                <p>© 2023 Audiospark. All rights reserved.</p>
+            </div>
+        </footer>
+
+
+        <!-- BACK TOP -->
+        <a href="#Top">
+            <div class="back-top" id="backTop">
+                <span class="far fa-angle-up"></span>
+            </div>
+        </a>
+
+
+
+        <!-- IMPORT JS -->
+        <script src="js/app.js"></script>
+    
+    </body>
+</html>

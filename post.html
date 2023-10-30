@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An unparalleled experience of sound magic, Audiospark">
+        <meta name="keywords" content="Audiospark">
+        <meta name="theme-color" content="#0000FF">
+
+        <!-- IMPORT CSS MAIN -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- IMPORT FONT AWESOME -->
+        <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome.min.css">
+        <link rel="stylesheet" type="text/css" href="fonts/css/all.min.css">
+        <!-- IMPORT FAVICON -->
+        <link rel="shortcut icon" href="images/logo/SVG/Audiospark_Logo_Icon.svg" type="image/x-icon">
+        
+        <!-- TITLE -->
+        <title>POST: Speed Runner Ultima Trailer Music — Audiospark</title>
+    </head>
+    <body id="Top" class="page-01">
+
+        <!-- LOADER -->
+        <div class="loader-warpper" id="loader">
+            <div class="loader"></div>
+        </div>
+
+
+        <!-- NAVBAR -->
+        <nav id="navbarFixed">
+            <ul>
+                <a href="javascript:void(0)" onclick="navbarMobileToggle()" title="Menu" aria-label="Menu" class="fa-bars-mobile"><span class="far fa-bars"></span></a>
+                <a href="index.html"><img src="images/logo/SVG/Audiospark_Logo_Icon.svg" alt="" title="Audiospark"></a>
+                <ul id="navbarMobileToggle">
+                    <a href="javascript:void(0)" onclick="navbarMobileToggle()" title="Close Menu" aria-label="Close Menu" class="fa-close-mobile"><span class="far fa-close"></span></a>
+                    
+                    <a href="index.html#explore"><li>Explore</li></a>
+                    <a href="index.html#featured_creators"><li>Featured Creators</li></a>
+                    <a href="index.html#trending"><li>Trending</li></a>
+                    <a href="index.html#category"><li>Category</li></a>
+                    <a href="index.html#popular_artists"><li>Popular Artists</li></a>
+                </ul>
+            </ul>
+            <ul>
+                <a href="javascript:void(0)" onclick="switchMode()" id="switchModeBtnDark" title="Switch Dark Mode" aria-label="Switch Dark Mode"><span class="far fa-moon"></span></a>
+                <a href="javascript:void(0)" onclick="switchMode()" id="switchModeBtnLight" title="Switch Light Mode" aria-label="Switch Light Mode"><span class="far fa-sun"></span></a>
+                <a href="javascript:void(0)" onclick="searchMode()" title="Search" aria-label="Search"><span class="far fa-search"></span></a>
+                <a href="javascript:void(0)" onclick="avatarDropdown()"><img src="images/avatar/avatar-1.png" alt=""></a>
+
+                <!-- AVATAR DORPDOWN -->
+                <div class="avatar-dropdown" id="avatarDropdown">
+                    <a href=""><li><span class="far fa-user"></span> Profile</li></a>
+                    <a href=""><li><span class="far fa-cog"></span> Settings</li></a>
+                    <a href="javascript:void(0)" onclick="supportChatMode()"><li><span class="far fa-comment"></span> Support</li></a>
+                    <a href=""><li><span class="far fa-star"></span> Upgrade Plan</li></a>
+
+                    <hr>
+
+                    <a href=""><li><span class="far fa-history"></span> Recent</li></a>
+                    <a href=""><li><span class="far fa-play-circle"></span> Playlist</li></a>
+                    <a href=""><li><span class="far fa-heart"></span> likes</li></a>
+                    <a href=""><li><span class="far fa-download"></span> Downloads</li></a>
+                </div>
+            </ul>
+        </nav>
+
+        <!-- SEARCH MODE -->
+        <div class="overlay-search-mode" id="overlaySearchMode">
+            <div class="search-mode" id="searchMode">
+                <a href="javascript:void(0)" onclick="searchMode()"></a>
+                <!-- FORM: SEARCH -->
+                <form action="" method="post">
+                    <span class="far fa-search"></span>
+                    <input type="search" placeholder="Search" aria-placeholder="Search">
+                </form>
+            </div>
+        </div>
+
+        <!-- SUPPORT & CHAT MODE -->
+        <div class="overlay-support-chat-mode" id="supportChatMode">
+            <div class="support-chat-mode">
+                <!-- CHAT HEADER -->
+                <div class="support-chat-mode-header">
+                    <h4>Support <img src="images/logo/PNG/Audiospark_Logo_Icon/Audiospark_Logo_Icon@2400.png" alt="" title="Audiospark Bot"></h4>
+                    <a href="javascript:void(0)" onclick="supportChatMode()"><span class="far fa-close"></span></a>
+                </div>
+                <!-- CHAT BODY -->
+                <div class="support-chat-mode-body">
+                    <div class="chat-date">Today, September 26, 2023</div>
+                    <div class="section-message-bot">
+                        <img src="images/logo/PNG/Audiospark_Logo_Icon/Audiospark_Logo_Icon@2400.png" alt="">
+                        <p>Hello! How can I assist you today?</p>
+                    </div>
+                    <div class="section-message-user">
+                        <img src="images/avatar/avatar-1.png" alt="">
+                        <p>Hi</p>
+                        <p>How to download as musics ZIP ???</p>
+                    </div>
+                    <div class="section-message-bot">
+                        <img src="images/logo/PNG/Audiospark_Logo_Icon/Audiospark_Logo_Icon@2400.png" alt="">
+                        <p>You most first click on the 'DOWNLOAD' button to automatically download ZIP file after a few seconds.
+                        <br><br>
+                        If you have a problem, are you ready to be responsive to you.</p>
+                    </div>
+                    <div class="section-message-user">
+                        <img src="images/avatar/avatar-1.png" alt="">
+                        <p>Thank you very much for your problem.</p>
+                        <p>🙏🙏🙏</p>
+                    </div>
+                </div>
+                <!-- CHAT FOOTER -->
+                <div class="support-chat-mode-footer">
+                    <form action="" method="post">
+                        <span class="far fa-paperclip" onclick=""></span>
+                        <textarea name="" id="" cols="30" rows="1" placeholder="Write a msssage..." aria-placeholder="Write a msssage..."></textarea>
+                        <span class="far fa-smile" onclick=""></span>
+                        <button type="submit" class="far fa-chevron-right" aria-placeholder="Send"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- HEADER/HERO -->
+        <header class="hero hero-page">
+            <div>
+                <figure>
+                    <a href="images/covers/Speed-Runner-Ultima-Trailer-Music-400x400.jpeg"><img src="images/covers/Speed-Runner-Ultima-Trailer-Music-400x400.jpeg" alt=""></a>
+                </figure>
+                <div>
+                    <h1>Speed Runner</h1>
+                    <a href="user.html">Ultima Trailer Music</a>
+
+                    <div>
+                        <a href="javascript:void(0)" onclick="likeMusicHeader()" title="Like" aria-label="Like"><button type="button" class="btn-post-default">4.6 <span class="far fa-heart" id="likeMusicHeader"></span></button></a>
+                        <a href="javascript:download()" title="Download" aria-label="Download"><button type="button" class="btn-post-default"><span class="far fa-download"></span></button></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- MAIN -->
+        <main class="main-page-01">
+            <!-- #SECTION: PLAYLIST POST -->
+            <section class="section-playlist-post">
+                <div class="section-playlist-post-header">
+                    <h2>Playlist</h2>
+                    <p>Ultima Trailer Music • 2021 • 10 Songs</p>
+                </div>
+                <div class="section-playlist-post-body">
+                    <div class="section-playlist-post-play-card">
+                        <div>
+                            <span class="far fa-play" id="playBtnPlayCard" onclick="playSound()" title="Play" aria-label="Play"></span>
+                            <span class="far fa-pause" id="pauseBtnPlayCard" onclick="pauseSound()" title="Pause" aria-label="Pause"></span>
+                            <h4>Helix Angle</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="far fa-download" onclick="download()" title="Download" aria-label="Download"></span>
+                                <span class="far fa-heart" id="likeMusicPlay" onclick="likeMusicPlay()" title="Like" aria-label="Like"></span>
+                            </div>
+                            <p>1:39</p>
+                        </div>
+                    </div>
+                    <div class="section-playlist-post-play-card">
+                        <div>
+                            <span class="far fa-play" id="playBtnPlayCard2" onclick="" title="Play" aria-label="Play"></span>
+                            <h4>Enforcement</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="far fa-download" onclick="" title="Download" aria-label="Download"></span>
+                                <span class="far fa-heart" onclick="" title="Like" aria-label="Like"></span>
+                            </div>
+                            <p>1:30</p>
+                        </div>
+                    </div>
+                    <div class="section-playlist-post-play-card">
+                        <div>
+                            <span class="far fa-play" id="playBtnPlayCard2" onclick="" title="Play" aria-label="Play"></span>
+                            <h4>Artifact</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="far fa-download" onclick="" title="Download" aria-label="Download"></span>
+                                <span class="far fa-heart" onclick="" title="Like" aria-label="Like"></span>
+                            </div>
+                            <p>2:24</p>
+                        </div>
+                    </div>
+                    <div class="section-playlist-post-play-card">
+                        <div>
+                            <span class="far fa-play" id="playBtnPlayCard2" onclick="" title="Play" aria-label="Play"></span>
+                            <h4>Exterminator</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="far fa-download" onclick="" title="Download" aria-label="Download"></span>
+                                <span class="far fa-heart" onclick="" title="Like" aria-label="Like"></span>
+                            </div>
+                            <p>1:54</p>
+                        </div>
+                    </div>
+                    <div class="section-playlist-post-play-card">
+                        <div>
+                            <span class="far fa-play" id="playBtnPlayCard2" onclick="" title="Play" aria-label="Play"></span>
+                            <h4>Endicated</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="far fa-download" onclick="" title="Download" aria-label="Download"></span>
+                                <span class="far fa-heart" onclick="" title="Like" aria-label="Like"></span>
+                            </div>
+                            <p>1:30</p>
+                        </div>
+                    </div>
+                    <div class="section-playlist-post-play-card">
+                        <div>
+                            <span class="far fa-play" id="playBtnPlayCard2" onclick="" title="Play" aria-label="Play"></span>
+                            <h4>Autotimer</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="far fa-download" onclick="" title="Download" aria-label="Download"></span>
+                                <span class="far fa-heart" onclick="" title="Like" aria-label="Like"></span>
+                            </div>
+                            <p>2:04</p>
+                        </div>
+                    </div>
+                    <div class="section-playlist-post-play-card">
+                        <div>
+                            <span class="far fa-play" id="playBtnPlayCard2" onclick="" title="Play" aria-label="Play"></span>
+                            <h4>Circulation</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="far fa-download" onclick="" title="Download" aria-label="Download"></span>
+                                <span class="far fa-heart" onclick="" title="Like" aria-label="Like"></span>
+                            </div>
+                            <p>1:24</p>
+                        </div>
+                    </div>
+                    <div class="section-playlist-post-play-card">
+                        <div>
+                            <span class="far fa-play" id="playBtnPlayCard2" onclick="" title="Play" aria-label="Play"></span>
+                            <h4>Bazooka</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="far fa-download" onclick="" title="Download" aria-label="Download"></span>
+                                <span class="far fa-heart" onclick="" title="Like" aria-label="Like"></span>
+                            </div>
+                            <p>1:42</p>
+                        </div>
+                    </div>
+                    <div class="section-playlist-post-play-card">
+                        <div>
+                            <span class="far fa-play" id="playBtnPlayCard2" onclick="" title="Play" aria-label="Play"></span>
+                            <h4>Substrarte</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="far fa-download" onclick="" title="Download" aria-label="Download"></span>
+                                <span class="far fa-heart" onclick="" title="Like" aria-label="Like"></span>
+                            </div>
+                            <p>2:33</p>
+                        </div>
+                    </div>
+                    <div class="section-playlist-post-play-card">
+                        <div>
+                            <span class="far fa-play" id="playBtnPlayCard2" onclick="" title="Play" aria-label="Play"></span>
+                            <h4>Broken Down</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="far fa-download" onclick="" title="Download" aria-label="Download"></span>
+                                <span class="far fa-heart" onclick="" title="Like" aria-label="Like"></span>
+                            </div>
+                            <p>1:42</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-playlist-post-footer">
+                    <p>&copy; Ultima Trailer Music</p>
+                </div>
+            </section>
+
+            <!-- #SECTION: RELATED MUSIC -->
+            <section class="section-trending">
+                <div>
+                    <h2>Related Musics</h2>
+                    <p><a href="">See all</a></p>
+                </div>
+
+                <!-- RELATED MUSIC SLIDER -->
+                <div class="card-grid-slider">
+                    <!-- CARD GROUP GRID -->
+                    <div class="card-group-grid">
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/Undefeated-Amadea-Music-Productions-400x400.jpeg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">Undefeated</a></h4>
+                                <p><a href="user.html">Amadea Music Productions</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/Thomas-Newman-1917-400x400.jpg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">1917</a></h4>
+                                <p><a href="user.html">Thomas Newman</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/Tyler-Bates-John-Wick-Chapter-3-Parabellum-400x400.jpg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">John Wick Chapter 3 Parabellum</a></h4>
+                                <p><a href="user.html">Tyler Bates</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/Thomas-Newman-1917-400x400.jpg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">1917</a></h4>
+                                <p><a href="user.html">Thomas Newman</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-group-grid">
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/The-Light-Around-Us-Dream-Sounds-400x400.jpeg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">The Light Around Us</a></h4>
+                                <p><a href="user.html">Dream Sounds</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/Speed-Runner-Ultima-Trailer-Music-400x400.jpeg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">Speed Runner</a></h4>
+                                <p><a href="user.html">Ultima Trailer Music</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/The-Lake-House-DYATHON-400x400.jpeg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">The Lake House</a></h4>
+                                <p><a href="user.html">DYATHON</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/Summer-LiQWYD-1-400x400.jpeg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">Summer</a></h4>
+                                <p><a href="user.html">LiQWYD</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-group-grid">
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/Stargazing-Various-Artists-400x400.jpeg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">Stargazing</a></h4>
+                                <p><a href="user.html">Various Artists</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/Speed-Runner-Ultima-Trailer-Music-400x400.jpeg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">Speed Runner</a></h4>
+                                <p><a href="user.html">Ultima Trailer Music</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/Pulse-Paul-Sills-400x400.jpeg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">Pulse</a></h4>
+                                <p><a href="user.html">Paul Sills</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/Shock-and-Awe-Complexities-of-Sound-400x400.jpeg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">Shock and Awe</a></h4>
+                                <p><a href="user.html">Complexities of Sound</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-group-grid">
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/Ridge-Rider-Amadea-Music-Productions-400x400.jpeg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">Ridge Rider</a></h4>
+                                <p><a href="user.html">Amadea Music Productions</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/Memories-of-the-Past-Merkwood-Music-400x400.jpeg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">Memories of The Past</a></h4>
+                                <p><a href="user.html">Merkwood Music</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/RE-ACTION-NOIR-DEUX-The-Hit-House-400x400.jpeg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">The Hit House</a></h4>
+                                <p><a href="user.html">RE ACTION NOIR DEUX</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/Pulse-Paul-Sills-400x400.jpeg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">Pulse</a></h4>
+                                <p><a href="user.html">Paul Sills</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-group-grid">
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/Millenium-Hybrid-Electro-Synthwave-Philippe-Briand-Salvador-Casais-400x400.jpeg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">Millenium Hybrid Electro Synthwave</a></h4>
+                                <p><a href="user.html">Philippe Briand Salvador Casais</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/Memories-of-the-Past-Merkwood-Music-400x400.jpeg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">Memories of The Past</a></h4>
+                                <p><a href="user.html">Merkwood Music</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/Pulse-Paul-Sills-400x400.jpeg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">Pulse</a></h4>
+                                <p><a href="user.html">Paul Sills</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                        <div class="card-playing-horizontal">
+                            <figure class="card-playing-horizontal-header">
+                                <div>
+                                    <span class="far fa-play" onclick=""></span>
+                                </div>
+                                <a href="post.html"><img src="images/covers/Mark-Isham-Honest-Thief-400x400.jpg" alt=""></a>
+                            </figure>
+                            <div class="card-playing-horizontal-body">
+                                <h4><a href="post.html">Honest Thief</a></h4>
+                                <p><a href="user.html">Mark Isham</a></p>
+                            </div>
+                            <div class="card-playing-horizontal-footer">
+                                <a href="javascript:void(0)" onclick="" title="Like" aria-label="Like"><span class="far fa-heart"></span></a>
+                                <a href="javascript:void(0)" onclick="" title="Download" aria-label="Download"><span class="far fa-download"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- #SECTION: MUSIC PLAYER -->
+            <section class="section-music-player" id="sectionMusicPlayer">
+                <div>
+                    <span class="far fa-angle-down" id="collapseMusicPlayerBtn" onclick="collapseMusicPlayer()"></span>
+                    <span class="far fa-angle-up" id="expandMusicPlayerBtn" onclick="collapseMusicPlayer()"></span>
+                    <img src="images/covers/Speed-Runner-Ultima-Trailer-Music-400x400.jpeg" alt="">
+                    <div>
+                        <h4>Helix Angle</h4>
+                        <a href="user.html">Ultima Trailer Music</a>
+                    </div>
+                </div>
+                <div class="section-music-player-timeline">
+                    <div class="section-music-player-timeline-linepoint"></div>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" onclick="likeMusicPlayer()" title="Like" aria-label="Like"><span class="far fa-heart" id="likeMusicPlayer"></span></a>
+                    <a href="javascript:void(0)" onclick="" title="Play" aria-label="Play"><span class="far fa-play"></span></a>
+                    <a href="javascript:void(0)" onclick="fullPlayer()" title="Show Full Player" aria-label="Show Full Player"><span class="far fa-expand"></span></a>
+                </div>
+            </section>
+
+            <!-- #SECTION: FULL PLAYER -->
+            <section class="section-full-player" id="fullPlayer">
+                <div class="section-full-player-header">
+                    <span class="far fa-angle-left" title="Back" aria-label="Back" onclick="fullPlayer()"></span>
+                    <h4>Now Playing</h4>
+                    <span class="far fa-ellipsis-h" title="More Option" aria-label="More Option" onclick="fullPlayerHeaderDropdown()"></span>
+
+                    <!-- FULL PLAYER HEADER DROPDOWN -->
+                    <div class="section-full-player-header-dropdown" id="fullPlayerHeaderDropdown">
+                        <a href=""><span class="far fa-play-circle"></span> Add To Playlist</a>
+                        <a href=""><span class="far fa-info-circle"></span> Help</a>
+                    </div>
+                </div>
+                <div class="section-full-player-body">
+                    <figure>
+                        <img src="images/covers/Speed-Runner-Ultima-Trailer-Music-400x400.jpeg" alt="">
+                    </figure>
+                    <div>
+                        <div>
+                            <span class="far fa-heart" title="Like" aria-label="Like"></span>
+                        </div>
+                        <div>
+                            <h3>Helix Angle</h3>
+                            <a href="user.html">Ultima Trailer Music</a>
+                        </div>
+                        <div>
+                            <span class="far fa-ellipsis-h" title="More Option" aria-label="More Option"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-full-player-footer">
+                    <span class="far fa-random" title="Shuffle" aria-label="Shuffle"></span>
+                    <span class="far fa-step-backward" title="Backward" aria-label="Backward"></span>
+                    <span class="far fa-play" title="Play" aria-label="Play"></span>
+                    <span class="far fa-step-forward" title="Forward" aria-label="Forward"></span>
+                    <span class="far fa-refresh" title="Repeat" aria-label="Repeat"></span>
+                </div>
+            </section>
+
+            <!-- #SECTION: DOWNLOAD -->
+            <div class="overlay-section-download" id="download">
+                <section class="section-download">
+                    <div class="section-download-header">
+                        <h4></h4>
+                        <span class="far fa-close" onclick="download()" title="Close" aria-label="Close"></span>
+                    </div>
+                    <div class="section-download-body">
+                        <a href="user.html"><img src="images/avatar-artists/Hans-Zimmer-400x400.jpg" alt=""></a>
+                        <h3>Say thanks to Ultima Trailer Music</h3>
+                        <p>By downloading, you agree to our <a href="">License</a><p>
+                        <a href="user.html" class="btn-secondary">Profile</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-grid">
+                <ul>
+                    <div>
+                        <img src="images/logo/SVG/Audiospark_Logo.svg" alt="" width="150px" id="logoFooterModeLight">
+                        <img src="images/logo/SVG/Audiospark_Logo_White.svg" alt="" width="150px" id="logoFooterModeDark">
+                        <p>An unparalleled experience of sound magic, Audiospark</p>
+
+                        <!-- SOCIAL MEDIA -->
+                        <ul class="footer-social-media">
+                            <a href="https://github.com/Mhadi-1382/" title="Github"><span class="fab fa-github"></span></a>
+                            <a href="https://dribbble.com/Mahdi_Rabiee/" title="Dribbble"><span class="fab fa-dribbble"></span></a>
+                            <a href="https://www.pinterest.com/MahdiRabiee82/" title="Pinterest"><span class="fab fa-pinterest"></span></a>
+                        </ul>
+
+                        <!-- FOOTER ICON -->
+                        <ul class="footer-icon">
+                            <a href=""><img src="images/elements/apple_download.svg" alt="" width="100"></a>
+                            <a href=""><img src="images/elements/google_download.svg" alt="" width="100"></a>
+                        </ul>
+                    </div>
+                </ul>
+                <ul>
+                    <h4>Audiospark</h4>
+                    <li><a href="index.html#explore">Explore</a></li>
+                    <li><a href="index.html#featured_creators">Featured Creators</a></li>
+                    <li><a href="index.html#trending">Trending</a></li>
+                    <li><a href="index.html#category">Category</a></li>
+                    <li><a href="index.html#popular_artists">Popular Artists</a></li>
+                </ul>
+                <ul>
+                    <h4>Company</h4>
+                    <li><a href="">About</a></li>
+                    <li><a href="javascript:supportChatMode()">Support</a></li>
+                    <li><a href="">API</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Cookie Policy</a></li>
+                </ul>
+                <ul>
+                    <h4>Community</h4>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Forum</a></li>
+                </ul>
+            </div>
+
+            <!-- FOOTER COPYRIGHT -->
+            <div class="footer-copyright">
+                <p>© 2023 Audiospark. All rights reserved.</p>
+            </div>
+        </footer>
+
+
+        <!-- BACK TOP -->
+        <a href="#Top">
+            <div class="back-top" id="backTop">
+                <span class="far fa-angle-up"></span>
+            </div>
+        </a>
+
+
+
+        <!-- IMPORT JS -->
+        <script src="js/app.js"></script>
+    
+    </body>
+</html>
